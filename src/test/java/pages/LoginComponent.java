@@ -15,8 +15,10 @@ public class LoginComponent extends BasePage
 
     private By TextField_Username = By.cssSelector("input[name='login']");
     private By TextField_Password = By.cssSelector("input[name='password']");
-    private By Button_Login = By.linkText("Login");
-    private By Button_Register = By.linkText("Register");
+    private By Button_Login = By.xpath("//button[.='Login']");
+    private By Button_Register = By.xpath("//a[.='Register']");
+
+    private By Link_Profile = By.xpath("//a[.='Profile']");
 
     private By Label_User_Greeting = By.cssSelector(".nav-link.disabled");
     private By Label_Invalid_Credentials = By.xpath("//*[.='Invalid username/password']");
@@ -32,6 +34,13 @@ public class LoginComponent extends BasePage
         SetElementValue(TextField_Username, userName);
         SetElementValue(TextField_Password, password);
         ClickElement(Button_Login);
+
+        try
+        {
+            WaitForElement(Link_Profile);
+        }
+        catch(Exception e)
+        {}
     }
 
     public boolean IsLoginSuccess()

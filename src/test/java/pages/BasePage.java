@@ -65,7 +65,15 @@ public class BasePage
 
     public boolean DoesElementExist(By locator)
     {
-        return driver.findElements(locator).size() != 0;
+        if (driver.findElements(locator).size() > 0)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
     }
 
     protected void WaitForSpinnerToDisappear()

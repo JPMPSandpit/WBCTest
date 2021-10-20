@@ -7,8 +7,8 @@ import java.util.Properties;
 
 public class PropertiesManager
 {
-    private static String filePath = System.getProperty("user.dir") + "\\src\\main\\config\\Configuration.properties";
-
+    private static String filePath = System.getProperty("user.dir") + "\\src\\test\\config\\Configuration.properties";
+    static Properties properties = new Properties();
 
     private static String testUrl;
     private static String username;
@@ -16,10 +16,9 @@ public class PropertiesManager
     private static String firstName;
     private static String lastName;
 
-    public static void main(String[] args) throws IOException
+    public static void initializeProperties() throws IOException
     {
         FileInputStream fileInputStream = new FileInputStream(filePath);
-        Properties properties = new Properties();
         properties.load(fileInputStream);
 
         testUrl = properties.getProperty("testUrl");

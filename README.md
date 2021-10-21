@@ -25,7 +25,7 @@
 1. In IntelliJ > File > New > Project from Version Control, set Version control = GIT, set local directory to clone files to, then set URL to clone path: https://github.com/JPMPSandpit/WBCTest.git. Click Clone to clone repo from GitHub.
 2. Once the project has been successfully loaded, build project.
 3. Find testng.xml, right click and Run.
-4. Once test run is completed, find the test-output folder and open the html files in a browser to see test run results.
+4. Once test run is completed, find the test-output > BuggyCarsTest folder and open the html files in a browser to see test run results.
 
 
 **Additional files**

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CarDetails"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.863">
+    <properties></properties>
+
+
+
+            <testcase
+                name="CommentOnDiablo"
+                time="3.611"
+                classname="tests.CarDetailsTests">
+            </testcase>
+            <testcase
+                name="VerifyVoteOrder"
+                time="7.252"
+                classname="tests.CarDetailsTests">
+            </testcase>
+</testsuite>

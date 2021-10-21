@@ -2,13 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import utilities.PropertiesManager;
 
 public class LoginComponent extends BasePage
 {
@@ -19,6 +12,7 @@ public class LoginComponent extends BasePage
     private By Button_Register = By.xpath("//a[.='Register']");
 
     private By Link_Profile = By.xpath("//a[.='Profile']");
+    private By Link_Home = By.xpath("//a[.='Buggy Rating']");
 
     private By Label_User_Greeting = By.cssSelector(".nav-link.disabled");
     private By Label_Invalid_Credentials = By.xpath("//*[.='Invalid username/password']");
@@ -52,6 +46,11 @@ public class LoginComponent extends BasePage
     public void RegisterUser()
     {
         ClickElement(Button_Register);
+    }
+
+    public void GoToHomepage()
+    {
+        ClickElement(Link_Home);
     }
 
     public boolean IsLoginSuccess()

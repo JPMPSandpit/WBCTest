@@ -1,10 +1,22 @@
-package utilities;
+package data;
 
 public class GlobalTestVariables
 {
     private static String textToSearchFor = "";
     private static String loginName = "";
     private static String password = "";
+
+    private static String voteCount ="";
+
+    public static String getVoteCount()
+    {
+        return voteCount;
+    }
+
+    public static void setVoteCount(String voteCount)
+    {
+        GlobalTestVariables.voteCount = voteCount;
+    }
 
     public static String getLoginName()
     {

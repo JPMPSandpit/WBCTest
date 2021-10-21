@@ -4,8 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginComponent;
 import pages.UserProfilePage;
-import utilities.GlobalTestVariables;
-import utilities.PropertiesManager;
+import data.GlobalTestVariables;
+import data.PropertiesManager;
 
 public class ProfileTests extends BaseTest
 {

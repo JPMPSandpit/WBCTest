@@ -1,10 +1,9 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginComponent;
-import utilities.PropertiesManager;
+import data.PropertiesManager;
 
 public class LoginTests extends BaseTest
 {

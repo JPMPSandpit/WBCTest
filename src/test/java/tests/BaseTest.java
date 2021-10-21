@@ -2,10 +2,8 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
-import utilities.PropertiesManager;
+import data.PropertiesManager;
 
 import java.io.IOException;
 
@@ -14,7 +12,7 @@ public class BaseTest
     protected WebDriver driver;
     //protected PropertiesManager propertiesManager;
 
-    @BeforeSuite
+    @BeforeMethod
     public void testSetup() throws IOException
     {
         PropertiesManager.initializeProperties();
@@ -25,7 +23,7 @@ public class BaseTest
         driver.navigate().to(PropertiesManager.getUrl());
     }
 
-    @AfterSuite
+    @AfterMethod
     public void testCleanup()
     {
         driver.quit();

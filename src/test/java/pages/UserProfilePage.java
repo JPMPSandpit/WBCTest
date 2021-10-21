@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import utilities.GlobalTestVariables;
+import data.GlobalTestVariables;
 import utilities.StringUtils;
 
 public class UserProfilePage extends BasePage

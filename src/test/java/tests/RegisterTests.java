@@ -4,8 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginComponent;
 import pages.RegisterPage;
-import utilities.GlobalTestVariables;
-import utilities.PropertiesManager;
+import data.GlobalTestVariables;
 
 public class RegisterTests extends BaseTest
 {

@@ -6,7 +6,19 @@
     </test>
     <test name="Register">
         <classes>
-            <class name="tests.LoginTests"/>
+            <class name="tests.RegisterTests"/>
         </classes>
     </test>
+    <test name="ProfileCreation">
+        <classes>
+            <class name="tests.ProfileTests"/>
+        </classes>
+    </test>
+
+    <test name="CarDetails">
+        <classes>
+            <class name="tests.CarDetailsTests"/>
+        </classes>
+    </test>
+
 </suite>

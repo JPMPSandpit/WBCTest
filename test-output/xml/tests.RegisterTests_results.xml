@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WBCTest"
+<testsuite name="Register"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="3.976">
+           time="3.905">
     <properties></properties>
 
 
 
             <testcase
                 name="RegisterNewUser"
-                time="3.976"
+                time="3.905"
                 classname="tests.RegisterTests">
             </testcase>
 </testsuite>

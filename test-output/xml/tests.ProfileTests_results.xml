@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WBCTest"
+<testsuite name="ProfileCreation"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.902">
+           time="4.747">
     <properties></properties>
 
 
 
             <testcase
                 name="ChangeUserAddress"
-                time="4.902"
+                time="4.747"
                 classname="tests.ProfileTests">
             </testcase>
 </testsuite>

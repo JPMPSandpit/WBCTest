@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="WBCTest(failed)">
     <classes>
-      <class name="tests.RegisterTests">
+      <class name="tests.CarDetailsTests">
         <methods>
-          <include name="testSetup"/>
-          <include name="RegisterNewUser"/>
           <include name="testCleanup"/>
+          <include name="CreateNewUserAndLogIn"/>
+          <include name="testSetup"/>
+          <include name="VerifyVoteOrder"/>
         </methods>
-      </class> <!-- tests.RegisterTests -->
+      </class> <!-- tests.CarDetailsTests -->
     </classes>
   </test> <!-- WBCTest(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

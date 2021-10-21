@@ -17,7 +17,8 @@
 4. Set MAVEN_HOME system environment variable to Maven extraction path
 5. Add %MAVEN_HOME% to PATH system environment variable
 5. Download and install IntelliJ Community Edition
-6. In IntelliJ, go to File > Settings > Build, Execution, Deployment > Maven and set Maven home path to extraction path. Click Ok.
+6. In IntelliJ, go to File > Settings > Build, Execution, Deployment > Maven and set Maven home path to extraction path. 
+7. In the same window, on the Automatically download section, tick *Sources*, *Documentation*, and *Annotations* checkboxes 
 
 
 **Running the test:**

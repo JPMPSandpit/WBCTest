@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.LoginComponent;
 import utilities.PropertiesManager;
 
-public class SampleTests extends BaseTest
+public class LoginTests extends BaseTest
 {
     LoginComponent loginComponent;
 

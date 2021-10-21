@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +22,8 @@ public class BasePage
 
     private static int TimeoutInSeconds = 15;
 
-    protected By Spinner_Main = By.cssSelector("[src='/img/spin.gif']");
+    private By Spinner_Main = By.cssSelector("[src='/img/spin.gif']");
+    private By Link_Buggy_Rating_Home = By.xpath("//a[.='Buggy Rating']");
 
     public BasePage(WebDriver driver)
     {
@@ -38,32 +40,39 @@ public class BasePage
     {
         WaitForElement(locator);
         WebElement element = FindElement(locator);
+        ScrollToElement(locator);
         element.clear();
         element.sendKeys(value);
+    }
+
+    public void GoHome()
+    {
+        ClickElement(Link_Buggy_Rating_Home);
     }
 
     public void ClickElement(By locator)
     {
         WaitForElementToBeClickable(locator);
+        ScrollToElement(locator);
         FindElement(locator).click();
     }
 
-    public void WaitForElement(By locator)
+    protected void WaitForElement(By locator)
     {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void WaitForElementToBeClickable(By locator)
+    protected void WaitForElementToBeClickable(By locator)
     {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public void WaitForElementToDisappear(By locator)
+    protected void WaitForElementToDisappear(By locator)
     {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
-    public boolean DoesElementExist(By locator)
+    protected boolean DoesElementExist(By locator)
     {
         if (driver.findElements(locator).size() > 0)
         {
@@ -79,5 +88,11 @@ public class BasePage
     protected void WaitForSpinnerToDisappear()
     {
         WaitForElementToDisappear(Spinner_Main);
+    }
+
+    protected void ScrollToElement(By locator)
+    {
+        WebElement element = driver.findElement(locator);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }

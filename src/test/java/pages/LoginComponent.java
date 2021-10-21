@@ -27,6 +27,7 @@ public class LoginComponent extends BasePage
     {
         super (driver);
         WaitForSpinnerToDisappear();
+        WaitForElement(TextField_Username);
     }
 
     public void Login(String userName, String password)
@@ -41,6 +42,16 @@ public class LoginComponent extends BasePage
         }
         catch(Exception e)
         {}
+    }
+
+    public void AccessProfile()
+    {
+        ClickElement(Link_Profile);
+    }
+
+    public void RegisterUser()
+    {
+        ClickElement(Button_Register);
     }
 
     public boolean IsLoginSuccess()

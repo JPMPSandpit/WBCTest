@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-21T15:29:42 NZDT" name="Default Suite" finished-at="2021-10-21T15:29:46 NZDT" duration-ms="3993">
+    <groups>
+    </groups>
+    <test started-at="2021-10-21T15:29:42 NZDT" name="WBCTest" finished-at="2021-10-21T15:29:46 NZDT" duration-ms="3993">
+      <class name="tests.RegisterTests">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:tests.RegisterTests@5b0abc94]" started-at="2021-10-21T15:29:41 NZDT" name="testSetup" finished-at="2021-10-21T15:29:42 NZDT" duration-ms="1505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="RegisterNewUser()[pri:0, instance:tests.RegisterTests@5b0abc94]" started-at="2021-10-21T15:29:42 NZDT" name="RegisterNewUser" finished-at="2021-10-21T15:29:46 NZDT" duration-ms="3976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUser -->
+        <test-method is-config="true" signature="testCleanup()[pri:0, instance:tests.RegisterTests@5b0abc94]" started-at="2021-10-21T15:29:46 NZDT" name="testCleanup" finished-at="2021-10-21T15:29:46 NZDT" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCleanup -->
+      </class> <!-- tests.RegisterTests -->
+    </test> <!-- WBCTest -->
+  </suite> <!-- Default Suite -->
+</testng-results>

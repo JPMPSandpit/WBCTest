@@ -1,0 +1,12 @@
+<suite name="BuggyCarsTest">
+    <test name="Login">
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+    <test name="Register">
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+</suite>
